@@ -1,0 +1,40 @@
+<% layout("/layouts/boilerplate") %>
+
+<body>
+    
+    <div class="row">
+        <h3 class="offset-2">Add your Place:</h3>
+        <form method="post" action="/listing">
+            <div class="col-8 offset-2">
+                <input type="text" class="form-control" name="title" placeholder="Enter a catchy Tittle"> <br>
+
+            </div>
+            <div class="col-8 offset-2">
+                <textarea name="description" placeholder="Describe ypur place" class="form-control" name="description"></textarea><br>
+            </div>
+            <div class="col-8 offset-2">
+                <input type="text" class="form-control" name="image" placeholder="Enter your image url"> <br>
+
+            </div>
+            <div class="row">
+                <div class="col-3 offset-2">
+                    <input type="number" class="form-control" placeholder="Enter Price" name="price"> <br>
+     
+                </div>
+               
+                <div class="col-5 ">
+                    <input type="text" class="form-control" name="location" placeholder="location"> <br>
+    
+                </div>
+            </div>
+           
+            <div class="col-8 offset-2">
+                <input type="text" class="form-control" name="country" placeholder="country"> <br>
+            </div>
+           
+            <button class="btn btn-dark offset-2">Add</button><br><br>
+    
+        </form><br><br><br><br><br><br><br><br><br><br>
+    </div>
+   
+</body>
