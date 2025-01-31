@@ -1,0 +1,45 @@
+<% layout("/layouts/boilerplate") %>
+
+
+<body>
+    <% layout("/layouts/boilerplate") %>
+
+<body>
+    
+    <div class="row">
+        <h3 class="offset-2">Edit your listing</h3>
+        <form method="post" action="/listings/<%=listing._id%>?_method=PUT">
+            <div class="col-8 offset-2">
+                <input type="text" class="form-control" value="<%= listing.title %>" name="title" placeholder="Tittle"> <br> <br>
+
+            </div>
+            <div class="col-8 offset-2">
+                <textarea name="description" class="form-control" name="description"> <%= listing.description%></textarea><br> <br>
+            </div>
+            <div class="col-8 offset-2">
+                <input type="text" class="form-control" value="<%= listing.image %>" name="image" placeholder="Enter your image url"> <br><br>
+
+            </div>
+            <div class="row">
+                <div class="col-3 offset-2">
+                    <input type="number" class="form-control" value="<%= listing.price %>" name="price"> <br><br>
+     
+                </div>
+               
+                <div class="col-5 ">
+                    <input type="text" class="form-control" value="<%= listing.location %>" name="location" placeholder="location"> <br> <br>
+    
+                </div>
+            </div>
+           
+            <div class="col-8 offset-2">
+                <input type="text" class="form-control" value="<%= listing.country %>" name="country" placeholder="country"> <br> <br>
+            </div>
+           
+            <button class="btn btn-dark offset-2">Edit</button><br><br>
+    
+        </form>
+    </div>
+   
+</body>
+
